@@ -1,47 +1,40 @@
 {
-  "patients": [
-      {
-          "p_name": ""
-      }
-  ],
-  "staff": [
-
-  ],
-  "events": [
-      {
-          "type": "neonatal_resuscitation",
-          "id": "",
-          "name": "",
-          "vitals": [
-              {
-                  "time": ""
-              }
-          ],
-          "apgar_score": {
-              "min": [1, 5, 10, 15, 20],
-              "hr": [],
-              "re": [],
-              "mt": [],
-              "ri": [],
-              "clr": [],
-              "tot": []
-          },
-          "transactions": [
-              {
-                  "field": "",
-                  "value": "",
-                  "timestamp": ""
-              }
-          ],
-          "staff": [
-
-          ],
-          "assessment": {
-
-          },
-          "self_audit": {
-
-          }
-      }
-  ]
+    "recent_transactions":[
+        {
+        "id": "00_template",
+        "arrest": "",
+        "field": "",
+        "value": "",
+        "event": ""
+        },
+        {
+        "id": "30_f_resp_rate",
+        "arrest": "0.5",
+        "field": "f_resp_rate",
+        "value": "60"
+        },
+        {
+        "id": "30",
+        "arrest": "0.5",
+        "field": "f_color",
+        "value": "pink"
+        },
+        {
+        "id": "30",
+        "arrest": "0.5",
+        "field": "f_hr_val",
+        "value": ">100"
+        },
+        {
+        "id": "30",
+        "arrest": "0.5",
+        "field": "f_resp_effort",
+        "value": "vigorous cry"
+        },
+        {
+        "id": "0",
+        "arrest": "0.0",
+        "field": "f_resp_effort",
+        "value": "apneic"
+        }]
 }
