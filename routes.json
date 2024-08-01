@@ -1,3 +1,4 @@
 {
+     "/api/": "/",
     "/api/custom-endpoint": "/events/transactions"
 }

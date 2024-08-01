@@ -1,0 +1,147 @@
+{
+    "events": [
+      {
+        "type": "neonatal_resuscitation",
+        "id": "1",
+        "name": "",
+        "vitals": [
+          {
+            "time": "0.5"
+          }
+        ],
+        "apgar_score": {
+          "min": [
+            1,
+            5,
+            10,
+            15,
+            20
+          ],
+          "hr": [],
+          "re": [],
+          "mt": [],
+          "ri": [],
+          "clr": [],
+          "tot": []
+        },
+        "transactions": [
+          {
+            "id": "1",
+            "arrest": "0.5",
+            "field": "f_resp_rate",
+            "value": "60"
+          }
+        ],
+        "staff": [],
+        "assessment": {},
+        "self_audit": {}
+      },
+      {
+        "id": "c964"
+      }
+    ],
+    "recent_transactions": [
+      {
+        "id": "30_f_hr_val",
+        "arrest": "0.5",
+        "field": "f_hr_val",
+        "value": "110",
+        "event": "1"
+      },
+      {
+        "id": "30_f_color",
+        "arrest": "0.5",
+        "field": "f_color",
+        "value": "pink",
+        "event": "1"
+      },
+      {
+        "id": "0_f_resp_effort",
+        "arrest": "0.0",
+        "field": "f_resp_effort",
+        "value": "agonal",
+        "event": "1"
+      },
+      {
+        "id": "30_f_resp_effort",
+        "arrest": "0.5",
+        "field": "f_resp_effort",
+        "value": "apneic",
+        "event": "1"
+      }
+    ],
+    "vitals_by_arrest": [
+      {
+        "id": "0",
+        "arrest": "0.0"
+      },
+      {
+        "id": "30",
+        "arrest": "0.5"
+      },
+      {
+        "id": "60",
+        "arrest": "1.0"
+      },
+      {
+        "id": "120",
+        "arrest": "2.0"
+      },
+      {
+        "id": "180",
+        "arrest": "3.0"
+      },
+      {
+        "id": "240",
+        "arrest": "4.0"
+      },
+      {
+        "id": "300",
+        "arrest": "5.0"
+      },
+      {
+        "id": "0",
+        "arrest": "0.0",
+        "f_resp_effort": "weak cry"
+      },
+      {
+        "id": "30",
+        "arrest": "0.5",
+        "f_resp_effort": "vigorous cry"
+      },
+      {
+        "id": "30",
+        "arrest": "0.5",
+        "f_resp_effort": "weak cry",
+        "f_hr_val": "110"
+      },
+      {
+        "id": "30",
+        "arrest": "0.5",
+        "f_resp_effort": "breathing, spontaneous",
+        "f_color": "pink"
+      }
+    ]
+  }
+
+
+  async function postFieldValueByArrest (chg_TRXsByArrest, chgArrestSec) {
+    try {
+        const res = await fetch(`http://localhost:3000/vitals_by_arrest/${chgArrestSec}`, {
+            method: 'PUT',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(chg_TRXsByArrest)
+        });
+        const recentPostLog = await res.json();
+        if (!res.ok) {
+            console.log(recentPostLog.description);
+            return;
+        }
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+}

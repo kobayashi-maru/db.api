@@ -1,93 +1,403 @@
 {
-    "events": [
+  "events": [
+    {
+      "type": "neonatal_resuscitation",
+      "id": "1",
+      "name": "",
+      "vitals": [
         {
-            "type": "neonatal_resuscitation",
-            "id": "1",
-            "name": "",
-            "vitals": [
-                {
-                    "time": "0.5"
-                }
-            ],
-            "apgar_score": {
-                "min": [
-                    1,
-                    5,
-                    10,
-                    15,
-                    20
-                ],
-                "hr": [],
-                "re": [],
-                "mt": [],
-                "ri": [],
-                "clr": [],
-                "tot": []
-            },
-            "transactions": [
-                {
-                    "id": "1",
-                    "arrest": "0.5",
-                    "field": "f_resp_rate",
-                    "value": "60"
-                }
-            ],
-            "staff": [],
-            "assessment": {},
-            "self_audit": {}
-        },
-        {
-            "id": "c964"
+          "time": "0.5"
         }
-    ],
-    "recent_transactions":[
+      ],
+      "apgar_score": {
+        "min": [
+          1,
+          5,
+          10,
+          15,
+          20
+        ],
+        "hr": [],
+        "re": [],
+        "mt": [],
+        "ri": [],
+        "clr": [],
+        "tot": []
+      },
+      "transactions": [
         {
-        "id": "00_template",
-        "arrest": "",
-        "field": "",
-        "value": "",
-        "event": ""
-        },
-        {
-        "id": "30_f_resp_rate",
-        "arrest": "0.5",
-        "field": "f_resp_rate",
-        "value": "60"
-        },
-        {
-        "id": "30",
-        "arrest": "0.5",
-        "field": "f_color",
-        "value": "pink"
-        },
-        {
-        "id": "30",
-        "arrest": "0.5",
-        "field": "f_hr_val",
-        "value": ">100"
-        },
-        {
-        "id": "30",
-        "arrest": "0.5",
-        "field": "f_resp_effort",
-        "value": "vigorous cry"
-        },
-        {
-        "id": "0",
-        "arrest": "0.0",
-        "field": "f_resp_effort",
-        "value": "apneic"
-        },
-        {
-            "at30": {
-                "f_hr_val": "110",
-                "f_resp_effort": "apneic"
-            }
-        },
-        {
-            "id": "at30",
-            "f_hr_val": "110",
-            "f_resp_effort": "apneic"
+          "id": "1",
+          "arrest": "0.5",
+          "field": "f_resp_rate",
+          "value": "60"
         }
-    ]
+      ],
+      "staff": [],
+      "assessment": {},
+      "self_audit": {}
+    },
+    {
+      "id": "c964"
+    }
+  ],
+  "recent_transactions": [
+    {
+      "id": "30_f_color",
+      "arrest": "0.5",
+      "field": "f_color",
+      "value": "pink",
+      "event": "1"
+    },
+    {
+      "id": "30_f_resp_effort",
+      "arrest": "0.5",
+      "field": "f_resp_effort",
+      "value": "vigorous cry",
+      "event": "1"
+    },
+    {
+      "id": "60_f_resp_effort",
+      "arrest": "1.0",
+      "field": "f_resp_effort",
+      "value": "gasping",
+      "event": "1"
+    },
+    {
+      "id": "60_f_color",
+      "arrest": "1.0",
+      "field": "f_color",
+      "value": "pink",
+      "event": "1"
+    },
+    {
+      "id": "0_f_hr_val",
+      "arrest": "0.0",
+      "field": "f_hr_val",
+      "value": "100",
+      "event": "1"
+    },
+    {
+      "id": "30_f_hr_val",
+      "arrest": "0.5",
+      "field": "f_hr_val",
+      "value": "100",
+      "event": "1"
+    },
+    {
+      "id": "60_f_hr_val",
+      "arrest": "1.0",
+      "field": "f_hr_val",
+      "value": "90",
+      "event": "1"
+    },
+    {
+      "id": "120_f_hr_val",
+      "arrest": "2.0",
+      "field": "f_hr_val",
+      "value": "80",
+      "event": "1"
+    },
+    {
+      "id": "180_f_hr_val",
+      "arrest": "3.0",
+      "field": "f_hr_val",
+      "value": "120",
+      "event": "1"
+    },
+    {
+      "id": "240_f_hr_val",
+      "arrest": "4.0",
+      "field": "f_hr_val",
+      "value": "110",
+      "event": "1"
+    },
+    {
+      "id": "300_f_hr_val",
+      "arrest": "5.0",
+      "field": "f_hr_val",
+      "value": "115",
+      "event": "1"
+    },
+    {
+      "id": "0_f_spo2_val",
+      "arrest": "0.0",
+      "field": "f_spo2_val",
+      "value": "60",
+      "event": "1"
+    },
+    {
+      "id": "30_f_spo2_val",
+      "arrest": "0.5",
+      "field": "f_spo2_val",
+      "value": "60",
+      "event": "1"
+    },
+    {
+      "id": "60_f_spo2_val",
+      "arrest": "1.0",
+      "field": "f_spo2_val",
+      "value": "60",
+      "event": "1"
+    },
+    {
+      "id": "120_f_spo2_val",
+      "arrest": "2.0",
+      "field": "f_spo2_val",
+      "value": "65",
+      "event": "1"
+    },
+    {
+      "id": "180_f_spo2_val",
+      "arrest": "3.0",
+      "field": "f_spo2_val",
+      "value": "70",
+      "event": "1"
+    },
+    {
+      "id": "240_f_spo2_val",
+      "arrest": "4.0",
+      "field": "f_spo2_val",
+      "value": "80",
+      "event": "1"
+    },
+    {
+      "id": "300_f_spo2_val",
+      "arrest": "5.0",
+      "field": "f_spo2_val",
+      "value": "90",
+      "event": "1"
+    },
+    {
+      "id": "120_f_cpap_pressure",
+      "arrest": "2.0",
+      "field": "f_cpap_pressure",
+      "value": "6",
+      "event": "1"
+    },
+    {
+      "id": "180_f_cpap_pressure",
+      "arrest": "3.0",
+      "field": "f_cpap_pressure",
+      "value": "4",
+      "event": "1"
+    },
+    {
+      "id": "0_f_ppv_pip",
+      "arrest": "0.0",
+      "field": "f_ppv_pip",
+      "value": "20",
+      "event": "1"
+    },
+    {
+      "id": "30_f_ppv_pip",
+      "arrest": "0.5",
+      "field": "f_ppv_pip",
+      "value": "25",
+      "event": "1"
+    },
+    {
+      "id": "60_f_ppv_pip",
+      "arrest": "1.0",
+      "field": "f_ppv_pip",
+      "value": "25",
+      "event": "1"
+    },
+    {
+      "id": "120_f_ppv_pip",
+      "arrest": "2.0",
+      "field": "f_ppv_pip",
+      "value": "30",
+      "event": "1"
+    },
+    {
+      "id": "180_f_ppv_pip",
+      "arrest": "3.0",
+      "field": "f_ppv_pip",
+      "value": "20",
+      "event": "1"
+    },
+    {
+      "id": "240_f_ppv_pip",
+      "arrest": "4.0",
+      "field": "f_ppv_pip",
+      "value": "20",
+      "event": "1"
+    },
+    {
+      "id": "300_f_ppv_pip",
+      "arrest": "5.0",
+      "field": "f_ppv_pip",
+      "value": "20",
+      "event": "1"
+    },
+    {
+      "id": "300_f_cpap_pressure",
+      "arrest": "5.0",
+      "field": "f_cpap_pressure",
+      "value": "4",
+      "event": "1"
+    },
+    {
+      "id": "0_f_cpap_pressure",
+      "arrest": "0.0",
+      "field": "f_cpap_pressure",
+      "value": "4",
+      "event": "1"
+    },
+    {
+      "id": "30_f_cpap_pressure",
+      "arrest": "0.5",
+      "field": "f_cpap_pressure",
+      "value": "6",
+      "event": "1"
+    },
+    {
+      "id": "60_f_cpap_pressure",
+      "arrest": "1.0",
+      "field": "f_cpap_pressure",
+      "value": "8",
+      "event": "1"
+    },
+    {
+      "id": "240_f_cpap_pressure",
+      "arrest": "4.0",
+      "field": "f_cpap_pressure",
+      "value": "4",
+      "event": "1"
+    },
+    {
+      "id": "60_f_crt",
+      "arrest": "1.0",
+      "field": "f_crt",
+      "value": "≤ 3",
+      "event": "1"
+    },
+    {
+      "id": "0_f_crt",
+      "arrest": "0.0",
+      "field": "f_crt",
+      "value": "4",
+      "event": "1"
+    },
+    {
+      "id": "30_f_crt",
+      "arrest": "0.5",
+      "field": "f_crt",
+      "value": "≤ 3",
+      "event": "1"
+    },
+    {
+      "id": "120_f_crt",
+      "arrest": "2.0",
+      "field": "f_crt",
+      "value": "≤ 3",
+      "event": "1"
+    },
+    {
+      "id": "180_f_crt",
+      "arrest": "3.0",
+      "field": "f_crt",
+      "value": "≤ 3",
+      "event": "1"
+    },
+    {
+      "id": "240_f_crt",
+      "arrest": "4.0",
+      "field": "f_crt",
+      "value": "≤ 3",
+      "event": "1"
+    },
+    {
+      "id": "300_f_crt",
+      "arrest": "5.0",
+      "field": "f_crt",
+      "value": "≥ 5",
+      "event": "1"
+    },
+    {
+      "id": "300_f_resp_effort",
+      "arrest": "5.0",
+      "field": "f_resp_effort",
+      "value": "vigorous cry",
+      "event": "1"
+    },
+    {
+      "id": "0_f_resp_effort",
+      "arrest": "0.0",
+      "field": "f_resp_effort",
+      "value": "weak cry",
+      "event": "1"
+    }
+  ],
+  "vitals_by_arrest": [
+    {
+      "id": "60",
+      "arrest": "1.0",
+      "f_resp_effort": "gasping",
+      "f_color": "pink",
+      "f_hr_val": "90",
+      "f_spo2_val": "60",
+      "f_cpap_pressure": "8",
+      "f_ppv_pip": "25",
+      "f_crt": "≤ 3"
+    },
+    {
+      "id": "30",
+      "arrest": "0.5",
+      "f_resp_effort": "vigorous cry",
+      "f_hr_val": "100",
+      "f_color": "pink",
+      "f_spo2_val": "60",
+      "f_cpap_pressure": "6",
+      "f_ppv_pip": "25",
+      "f_crt": "≤ 3"
+    },
+    {
+      "id": "120",
+      "arrest": "2.0",
+      "f_hr_val": "80",
+      "f_spo2_val": "65",
+      "f_cpap_pressure": "6",
+      "f_ppv_pip": "30",
+      "f_crt": "≤ 3"
+    },
+    {
+      "id": "180",
+      "arrest": "3.0",
+      "f_hr_val": "120",
+      "f_spo2_val": "70",
+      "f_cpap_pressure": "4",
+      "f_ppv_pip": "20",
+      "f_crt": "≤ 3"
+    },
+    {
+      "id": "240",
+      "arrest": "4.0",
+      "f_hr_val": "110",
+      "f_spo2_val": "80",
+      "f_cpap_pressure": "4",
+      "f_ppv_pip": "20",
+      "f_crt": "≤ 3"
+    },
+    {
+      "id": "300",
+      "arrest": "5.0",
+      "f_resp_effort": "vigorous cry",
+      "f_hr_val": "115",
+      "f_spo2_val": "90",
+      "f_cpap_pressure": "4",
+      "f_ppv_pip": "20",
+      "f_crt": "≥ 5"
+    },
+    {
+      "id": "0",
+      "arrest": "0.0",
+      "f_resp_effort": "weak cry",
+      "f_hr_val": "100",
+      "f_spo2_val": "60",
+      "f_cpap_pressure": "4",
+      "f_ppv_pip": "20",
+      "f_crt": "4"
+    }
+  ]
 }
